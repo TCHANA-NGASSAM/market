@@ -205,6 +205,7 @@ padding-left: 3%;
 .Flash-Sales{
     margin-left: 12%;
     margin-top: 5%;
+    height: 1500px;
 }
 .Flash-Sales .contain-colors{
     display: flex;
@@ -281,3 +282,16 @@ padding-left: 3%;
     text-align: center;
 }
 
+.contain-card{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    gap: 15px;
+}
+
+.contain-card .card{
+    width: 300px;
+    height: 400px;
+    background-color: #a5a5a5;
+    border-radius: 5px;
+}
