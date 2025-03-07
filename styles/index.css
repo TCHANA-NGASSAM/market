@@ -205,7 +205,6 @@ padding-left: 3%;
 .Flash-Sales{
     margin-left: 12%;
     margin-top: 5%;
-    height: 1500px;
 }
 .Flash-Sales .contain-colors{
     display: flex;
@@ -289,9 +288,180 @@ padding-left: 3%;
     gap: 15px;
 }
 
-.contain-card .card{
-    width: 300px;
-    height: 400px;
-    background-color: #a5a5a5;
+.contain-card {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 300px; 
+    border-radius: 10px;
+    height: 100%;
+    overflow: hidden;
+    background-color: #F5F5F5;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+.left-btn {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    background-color: #DB4444;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    padding:7px 15px;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.right-buttons {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.top-btn,
+.bottom-btn {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.top-btn:hover,
+.bottom-btn:hover {
+    background-color: #f1f1f1;
+}
+
+
+.product-img {
+    display: block;
+    margin: 70px auto 60px; 
+}
+
+
+.add-to-cart {
+    position: absolute;
+    top: 240px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    margin: 0;
+}
+
+.card:hover .add-to-cart {
+    opacity: 1;
+}
+
+/* Description et prix */
+.details {
+    margin: 0;
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price {
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 10px;
+}
+
+/* Étoiles */
+.stars {
+    margin-top: 5px;
+    font-size: 18px;
+    color: rgb(141, 141, 141);
+}
+
+.contain-button{
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.contain-button button{
+    padding: 25px 60px 25px 60px;
+    background-color: #DB4444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+.hr-card{
+    width: 90%;
+}
+
+
+.Category{
+    border: 1px solid #831d1d;
+    padding: 30px 65px 30px 65px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+    margin-bottom: 1%;
+}
+
+.direction-category{
+    display: flex;
+    gap: 10px;
+    margin-left: 42%;
+    padding-bottom: 12px;
+}
+
+.direction-left-category{
+    padding: 10px;
+    border-radius: 100%;
+    background-color: #ebe5e5;
+    align-items: center;
+    text-align: center;
+}
+
+.direction-right-category{
+    padding: 10px;
+    border-radius: 100%;
+    background-color: #ebe5e5;
+    align-items: center;
+    text-align: center;
 }
