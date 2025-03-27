@@ -357,6 +357,8 @@ padding-left: 3%;
 .product-img {
     display: block;
     margin: 70px auto 60px; 
+    height: 172px;
+    width: 152px;
 }
 
 
@@ -464,4 +466,25 @@ padding-left: 3%;
     background-color: #ebe5e5;
     align-items: center;
     text-align: center;
+}
+
+
+.button-direction button{
+    padding: 25px 30px 25px 30px;
+    background-color: #DB4444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.button-direction{
+    display: flex;
+    gap: 10px;
+    margin-left: 57%;
+    padding-bottom: 12px;
 }
