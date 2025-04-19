@@ -5,10 +5,28 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: #e7e3e3;
+}
+
+:root{
+    --primary:#FFFF;
+    --primary1:#363738;
+    --Secondary:#F5F5F5;
+    --Secondary:#FEFAF1;
+    --BG:#FFFFFF;
+    --Text: #FAFAFA;
+    --Text1:#7D8184;
+    --Text2:#000000;
+    --button:#000000;
+    --Secondary2: #DB4444;
+    --button1:#00FF66;
+    --button2:#DB4444;
+    --HoverButton: #E07575;
+    --HoverButton1:#A0BCE0;
 }
   
 .Summer{
-    background-color: rgb(0, 0, 0);
+    background-color: var(--button);
     color:#ffffffcc;
     padding: 10px;
     display: flex;
@@ -230,7 +248,7 @@ padding-left: 3%;
 }
 
 .contain-title h1{
-    font-size: 50px;
+    font-size: 30px;
 }
 .contain-hours{
     display: flex;
@@ -487,4 +505,12 @@ padding-left: 3%;
     gap: 10px;
     margin-left: 57%;
     padding-bottom: 12px;
+}
+
+
+
+
+.jbl{
+    display: flex;
+    justify-content: space-between;
 }
